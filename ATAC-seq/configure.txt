@@ -1,0 +1,26 @@
+ref_index=/md01/lixh/HOTAIR/ATAC/Reference/hg19/hg19
+ref_size=/md01/lixh/HOTAIR/ATAC/Reference/hg19.sizes
+max_thread=8 
+gsize=hs 
+/md01/lixh/HOTAIR/ATAC/Data/C-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-1
+/md01/lixh/HOTAIR/ATAC/Data/C-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-2
+/md01/lixh/HOTAIR/ATAC/Data/C-DF3-4-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-DF3-4-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-DF3-4-1
+/md01/lixh/HOTAIR/ATAC/Data/C-DF3-4-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-DF3-4-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-DF3-4-2
+/md01/lixh/HOTAIR/ATAC/Data/OE-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-1
+/md01/lixh/HOTAIR/ATAC/Data/OE-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-2
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-2-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-2-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-2-1
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-2-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-2-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-2-2
+/md01/lixh/HOTAIR/ATAC/Data/C-DF3-2-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-DF3-2-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-DF3-2-1
+/md01/lixh/HOTAIR/ATAC/Data/C-DF3-2-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-DF3-2-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-DF3-2-2
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-1-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-1-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-1-1
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-1-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-1-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-1-2
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-4-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-4-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-4-1
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-4-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-4-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-4-2
+/md01/lixh/HOTAIR/ATAC/Data/C-puro-8-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-puro-8-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-puro-8-2
+/md01/lixh/HOTAIR/ATAC/Data/OE-puro-3-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-puro-3-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-puro-3-1
+/md01/lixh/HOTAIR/ATAC/Data/OE-puro-3-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-puro-3-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-puro-3-2
+/md01/lixh/HOTAIR/ATAC/Data/C-NT-1-1-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-NT-1-1-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-NT-1-1-1
+/md01/lixh/HOTAIR/ATAC/Data/C-NT-1-1-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/C-NT-1-1-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_C-NT-1-1-2
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-5-1_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-5-1_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-5-1
+/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-5-2_R1.fastq	/md01/lixh/HOTAIR/ATAC/Data/OE-DF3-5-2_R2.fastq	/md01/lixh/HOTAIR/ATAC/output	sample_OE-DF3-5-2
+
