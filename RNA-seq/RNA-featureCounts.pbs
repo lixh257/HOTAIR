@@ -1,0 +1,56 @@
+## PBS configure 
+#PBS -N RNA-seq-5
+#PBS -j oe
+#PBS -q batch
+#PBS -S /bin/sh
+#PBS -l nodes=1:ppn=18
+#PBS -l mem=20G
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-2-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-5-2_sorted_counts.txt  /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-5-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-5-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-5-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-4-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-4-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-4-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-4-1_sorted.bam
+ 
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-2-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-2-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-1-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-1-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-YTHDF3-1-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-1-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-puro-3-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-puro-3-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-puro-3-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-puro-3-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-P18-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-P18-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/OE-P18-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/OE-P18-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-YTHDF3-4-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-4-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-YTHDF3-4-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-4-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-YTHDF3-2-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-2-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-YTHDF3-2-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-2-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-puro-8-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-puro-8-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-puro-8-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-puro-8-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-P18-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-P18-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-P18-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-P18-1_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-NT-1-1-2_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-NT-1-1-2_sorted.bam
+
+/md01/lixh/software/subread-2.0.2-Linux-x86_64/bin/featureCounts -T 6 -p -t exon -g gene_id -a /md01/lixh/HOTAIR/RNA-seq/Ref/Homo_sapiens.GRCh37.75.gtf.gz -o /md01/lixh/HOTAIR/RNA-seq/Count/C-NT-1-1-1_sorted_counts.txt /md01/lixh/HOTAIR/RNA-seq/Map/C-NT-1-1-1_sorted.bam
+
+
+

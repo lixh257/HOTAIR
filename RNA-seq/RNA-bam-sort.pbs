@@ -1,0 +1,55 @@
+## PBS configure 
+#PBS -N RNA-seq-4
+#PBS -j oe
+#PBS -q batch
+#PBS -S /bin/sh
+#PBS -l nodes=1:ppn=18
+#PBS -l mem=20G
+
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-5-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-5-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-5-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-5-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-4-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-4-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-4-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-4-1_sorted.bam
+ 
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-2-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-1-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-1-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-1-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-YTHDF3-1-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-puro-3-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-puro-3-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-puro-3-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-puro-3-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-P18-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-P18-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/OE-P18-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/OE-P18-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-4-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-4-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-4-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-4-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-2-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-2-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-2-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-YTHDF3-2-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-puro-8-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-puro-8-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-puro-8-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-puro-8-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-P18-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-P18-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-P18-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-P18-1_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-NT-1-1-2.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-NT-1-1-2_sorted.bam
+
+samtools sort /md01/lixh/HOTAIR/RNA-seq/Map/C-NT-1-1-1.bam -o /md01/lixh/HOTAIR/RNA-seq/Map/C-NT-1-1-1_sorted.bam
+
+
+
