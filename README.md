@@ -5,35 +5,46 @@ YTHDF3 &amp; HOTAIR
 
 Major steps to run RNA-seq pipeline 
 1. Trimming 
-#use trimmomatic-0.38.jar,
+
+#use trimmomatic-0.38.jar
+
 #see an example of this step in RNA-Trim.pbs
+
 qsub RNA-Trim.pbs
 
 2. Mapping #hisat2-2.2.1
 
 #download the software in https://daehwankimlab.github.io/hisat2/download/
+
 #download the reference
+
 wget https://genome-idx.s3.amazonaws.com/hisat/hg19_genome.tar.gz
+
 tar -zxvf *.tar.gz /hg19
 
 ##see an example of this step in RNA-hisat.pbs
+
 qsub RNA-hisat.pbs
 
 3. sorting
+4. 
 #converted the SAM files to BAM files and sorting them
 
 ##see an example of this step in RNA-bam-sort.pbs
+
 qsub RNA-bam-sort.pbs
 
 4. Count reads #subread-2.0.2-Linux-x86_64/featureCount
 
 ##see an example of this step in RNA-featureCounts.pbs
+
 qsub RNA-featureCounts.pbs
 
 5. The downstream analysis
 
 
-############################################
+YTHDF3 &amp; HOTAIR
+###########################################
 #ATAC-seq
 
 Major steps to run ATAC-seq pipeline 
@@ -42,14 +53,14 @@ Major steps to run ATAC-seq pipeline
 (See an example of this step in ATAC-seq/configure.txt.)
 ** No empty row allowed in configure
 
-# for single sample
+
 ref_index=/path/to/bowite2 index/ 
 ref_size=/path/to/genome_size
 max_thread=xx (the maximun thread per sample, default is 8)
 gsize=hs/mm/ce/dm (-g parameter in macs2, and species code to select blacklist)
 /path/to/sample1_R1.fastq	/path/to/sample1_R2.fastq	/path/to/output	sample_prefix
 
-# for multiple sample
+
 ref_index=/path/to/bowite2 index/ 
 ref_size=/path/to/genome_size
 max_thread=xx (the maximun thread for all samples. Can be calculated as 8 * number of samples, default is 8.)
