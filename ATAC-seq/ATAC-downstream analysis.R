@@ -111,7 +111,7 @@ for(i in 1:length(FC[,1])){
 }
 write.table(RES,"585peak_order_peak_result.txt",sep="\t",quote=F)
 
-####Fig 5 B
+########################################################################Fig 5 B
 coldata=read.table("coldata_ATAC.txt",sep="\t",header=T,row.names=1)
 annotation_col=data.frame(Condition=factor(coldata[,1]))
 annotation_row=data.frame(regulate=factor(FC[,9]))
@@ -179,7 +179,7 @@ ggplot(RES,aes(x=Type,y=Name,col=as.numeric(Rate),size=-log10(as.numeric(Pvalue)
   geom_point()+theme_bw()+
   scale_color_gradient(low="lightblue", high="darkblue")+
   scale_size_area(max_size =11)
-  #################################################################
+
 
 ##################################################################Fig 5E Down
 peak=read.table("6gene_ATAC_peak.txt",sep="\t",header=T,row.names=1)
@@ -204,7 +204,7 @@ pheatmap(peak, show_colnames= T, show_rownames= T, scale= "row", fontsize= 6.5,
          cutree_col=4
          
 )
-#############################################################################################
+
 
 ###########################################################################################Sup Fig 5D,5F
 setwd("F:/HOTAIR/HOTAIR-ALL/ATAC-seq/2021-11-10整理/")
