@@ -27,24 +27,27 @@ tar -zxvf *.tar.gz /hg19
 qsub RNA-hisat.pbs
 
 3. sorting
-4. 
 #converted the SAM files to BAM files and sorting them
 
 ##see an example of this step in RNA-bam-sort.pbs
 
 qsub RNA-bam-sort.pbs
 
-4. Count reads #subread-2.0.2-Linux-x86_64/featureCount
+4. Count reads 
+
+#subread-2.0.2-Linux-x86_64/featureCount
 
 ##see an example of this step in RNA-featureCounts.pbs
 
 qsub RNA-featureCounts.pbs
 
 5. The downstream analysis
+#see the code of  this step in RNA-downstream analysis.R
 
 
 YTHDF3 &amp; HOTAIR
 ###########################################
+
 #ATAC-seq
 
 Major steps to run ATAC-seq pipeline 
@@ -95,7 +98,5 @@ Three folders, Mapping, QC, and Peak_calling, will be created for each sample.
  python /md01/lixh/HOTAIR/ATAC/Code/AgetQCTable.py /md01/lixh/HOTAIR/ATAC/Code/configure.txt
  
  4 The downstream analysis
-   (1) 
-   (2) variation analysis
-   (3) motif
+#see the code of  this step in ATAC-downstream analysis
    
