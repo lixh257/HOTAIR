@@ -98,5 +98,5 @@ Three folders, Mapping, QC, and Peak_calling, will be created for each sample.
  python /md01/lixh/HOTAIR/ATAC/Code/AgetQCTable.py /md01/lixh/HOTAIR/ATAC/Code/configure.txt
  
  4 The downstream analysis
-#see the code of  this step in ATAC-downstream analysis
+#see the code of  this step in ATAC-downstream analysis.R
    
