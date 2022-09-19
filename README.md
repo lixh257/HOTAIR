@@ -1,9 +1,10 @@
 # HOTAIR
 YTHDF3 &amp; HOTAIR
-###########################################
-#RNA-seq
+######RNA-seq
+
 
 Major steps to run RNA-seq pipeline 
+
 1. Trimming 
 
 #use trimmomatic-0.38.jar
@@ -27,6 +28,7 @@ tar -zxvf *.tar.gz /hg19
 qsub RNA-hisat.pbs
 
 3. sorting
+
 #converted the SAM files to BAM files and sorting them
 
 ##see an example of this step in RNA-bam-sort.pbs
@@ -42,18 +44,21 @@ qsub RNA-bam-sort.pbs
 qsub RNA-featureCounts.pbs
 
 5. The downstream analysis
+
 #see the code of  this step in RNA-downstream analysis.R
 
 
-YTHDF3 &amp; HOTAIR
-###########################################
 
-#ATAC-seq
+
+######ATAC-seq
+
 
 Major steps to run ATAC-seq pipeline 
 
 1. Set up a configuration.txt file
-(See an example of this step in ATAC-seq/configure.txt.)
+
+#See an example of this step in ATAC-seq/configure.txt
+
 ** No empty row allowed in configure
 
 
@@ -75,6 +80,7 @@ submit multiple jobs!!path/to/sample1_R1.fastq	/path/to/sample1_R2.fastq	/path/t
 
 
 2. Run ATAC-seq pipeline
+
 (1) Create a shell script for each sample 
 (The shell script once created, will be located at the same directory as the configure.txt)
 ** Max_thread is calculated as 10 * number of sample
@@ -82,6 +88,7 @@ submit multiple jobs!!path/to/sample1_R1.fastq	/path/to/sample1_R2.fastq	/path/t
 perl /md01/lixh/HOTAIR/ATAC/Code/ATACseq_pipeline_hui.pl /md01/lixh/HOTAIR/ATAC/Code/configure.txt
 
 (2) submit shell scripts
+
 ** Make sure that you ONLY submit ONE job at a time. DO NOT simultaneously
 submit multiple jobs!!
 
@@ -93,10 +100,12 @@ Output files
 Three folders, Mapping, QC, and Peak_calling, will be created for each sample.
 
 3 Generate QC table
+
    (1) First make sure that you finished running all the samples listed in configure file successfully. 
    (2) Run the following script which gives default quality control output file named qcTable.txt.
  python /md01/lixh/HOTAIR/ATAC/Code/AgetQCTable.py /md01/lixh/HOTAIR/ATAC/Code/configure.txt
  
  4 The downstream analysis
+ 
 #see the code of  this step in ATAC-downstream analysis.R
    
